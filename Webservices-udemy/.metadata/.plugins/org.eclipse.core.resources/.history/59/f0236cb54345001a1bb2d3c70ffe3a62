@@ -1,0 +1,9 @@
+package springws.demo.model.request;
+
+public class UserDetaildRequestModel {
+private String firstname;
+private String lastname;
+private String email;
+private String password;
+	
+}//closes class

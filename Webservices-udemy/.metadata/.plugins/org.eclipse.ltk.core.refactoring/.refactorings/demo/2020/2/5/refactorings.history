@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;springws.demo.model.request.UserDetaildRequestModel&apos; to &apos;UserDetailsRequestModel&apos;&#x0A;- Original project: &apos;demo&apos;&#x0A;- Original element: &apos;springws.demo.model.request.UserDetaildRequestModel&apos;&#x0A;- Renamed element: &apos;springws.demo.model.request.UserDetailsRequestModel&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;UserDetaildRequestModel&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;springws.demo.model.request{UserDetaildRequestModel.java[UserDetaildRequestModel" matchStrategy="1" name="UserDetailsRequestModel" qualified="false" references="true" similarDeclarations="false" stamp="1580596968316" textual="false" version="1.0"/>
+</session>

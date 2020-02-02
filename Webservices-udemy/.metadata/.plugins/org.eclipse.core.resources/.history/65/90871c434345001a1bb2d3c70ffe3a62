@@ -1,0 +1,5 @@
+package springws.demo.model.request;
+
+public class UserDetaildRequestModel {
+
+}
