@@ -11,7 +11,6 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-      - cd /var/lib/jenkins/react-things/
 artifacts:
   files:
     - ./react-things/github-finder/src/App.js
