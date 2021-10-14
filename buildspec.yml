@@ -13,8 +13,8 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-    - App.js
-    - appspec.yml
-    - scripts/install-npm.sh
-    - scripts/start_finder.sh
-    - scripts/stop_finder.sh
+    - ./App.js
+    - ./appspec.yml
+    - ./scripts/install-npm.sh
+    - ./scripts/start_finder.sh
+    - ./scripts/stop_finder.sh
