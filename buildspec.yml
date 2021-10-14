@@ -2,8 +2,6 @@ version: 0.2
 
 phases:
   install:
-    runtime version:
-      node.js: 10
     commands:
       - pwd
   build:
