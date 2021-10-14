@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - pwd
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Compiling the React code...
+      - python test_app.py
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - App.js
+    - appspec.yml
+    - scripts/install-npm.sh
+    - scripts/start_finder.sh
+    - scripts/stop_finder.sh
