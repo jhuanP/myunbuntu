@@ -4,6 +4,7 @@ phases:
   install:
     commands:
       - pwd
+      - cd /var/lib/jenkins/react-things/
   build:
     commands:
       - echo Build started on `date`
