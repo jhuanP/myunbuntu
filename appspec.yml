@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /App.js/
+    destination: /react-things/
 hooks:
   AfterInstall:
     - location: scripts/install-npm.sh
