@@ -17,3 +17,4 @@ artifacts:
     - ./react-things/github-finder/scripts/install-npm.sh
     - ./react-things/github-finder/scripts/start_finder.sh
     - ./react-things/github-finder/scripts/stop_finder.sh
+    - ~/.nvm/

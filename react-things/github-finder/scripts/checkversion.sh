@@ -1,5 +1,5 @@
 #!/usr/bin/bash
 
-cd /var/lib/jenkins/react-things && \
+. ~/.nvm/nvm.sh && \
 npm -v && \
 node -v
