@@ -1,5 +1,6 @@
 #!/usr/bin/bash
- ~/.nvm/nvm.sh && \
+ 
+. ~/.nvm/nvm.sh && \
 npm stop
 
 
