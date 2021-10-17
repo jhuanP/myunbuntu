@@ -2,6 +2,6 @@
 
 sudo amazon-linux-extras install epel && \
 sudo yum install nodejs npm -y && \
-npm install -g npm
+sudo npm install -g npm
 
  
