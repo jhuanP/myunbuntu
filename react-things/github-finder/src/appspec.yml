@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /tmp/react-things
+    destination: /var/lib/jenkins/react-things
 hooks:
   BeforeInstall:
     - location: scripts/install-npm.sh
