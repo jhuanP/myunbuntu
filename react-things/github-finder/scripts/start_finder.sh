@@ -1,5 +1,5 @@
 #!/usr/bin/bash
 
-cd react-things/github-finder && \
+cd /var/lib/jenkins/react-things && \
 npm install && \
 npm start
