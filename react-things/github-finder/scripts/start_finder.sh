@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-pwd && \
-ls && \
+
+cd react-things/github-finder && \
 npm install && \
 npm start
