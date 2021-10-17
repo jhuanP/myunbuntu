@@ -5,7 +5,7 @@ files:
     destination: /react-things
 hooks:
   BeforeInstall:
-  - location: scripts/install-npm.sh
+    - location: scripts/install-npm.sh
       timeout: 300
       runas: root
   AfterInstall:
