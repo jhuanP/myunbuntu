@@ -14,7 +14,6 @@ phases:
 artifacts:
   files:
     - ./react-things/github-finder/src/App.js
-    - ./react-things/github-finder/appspec.yml
     - ./react-things/github-finder/scripts/install-npm.sh
     - ./react-things/github-finder/scripts/start_finder.sh
     - ./react-things/github-finder/scripts/stop_finder.sh
