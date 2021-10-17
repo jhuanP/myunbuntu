@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
-sudo amazon-linux-extras install epel && \
-sudo yum install nodejs npm -y && \
-sudo npm i -g npm@latest
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash && \
+. ~/.nvm/nvm.sh && \
+nvm install 10.19
 
  
