@@ -4,8 +4,12 @@ files:
   - source: /
     destination: /react-things/
 hooks:
-  AfterInstall:
+  BeforeInstall:
     - location: scripts/install-npm.sh
+      timeout: 300
+      runas: root
+  AfterInstall:
+    - location: scripts/checkversion.sh
       timeout: 300
       runas: root
   ApplicationStart:
