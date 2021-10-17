@@ -13,7 +13,6 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
-    - ./react-things/github-finder/src/appspec.yml
     - ./react-things/github-finder/src/App.js
     - ./react-things/github-finder/appspec.yml
     - ./react-things/github-finder/scripts/install-npm.sh
