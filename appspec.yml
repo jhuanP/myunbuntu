@@ -1,22 +1,22 @@
 version: 0.0
 os: linux
 files:
-  - source: /github-finder
+  - source: /react-things/github-finder/
     destination: /var/lib/jenkins/react-things
 hooks:
   BeforeInstall:
-    - location: scripts/install-npm.sh
+    - location: /react-things/github-finder/scripts/install-npm.sh
       timeout: 300
       runas: root
   AfterInstall:
-    - location: scripts/checkversion.sh
+    - location: /react-things/github-finder/scripts/checkversion.sh
       timeout: 300
       runas: root
   ApplicationStart:
-    - location: scripts/start_finder.sh
+    - location: /react-things/github-finder/scripts/start_finder.sh
       timeout: 300
       runas: root
   ApplicationStop:
-    - location: scripts/stop_finder.sh
+    - location: /react-things/github-finder/scripts/stop_finder.sh
       timeout: 300
       runas: root
