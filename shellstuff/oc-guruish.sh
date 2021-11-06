@@ -98,7 +98,7 @@ if [ $modOrProd = "Mod" ] || [ $modOrProd = "mod" ] || [ $modOrProd = "m" ]
 
           env="dev"
 
-          oc login https://master.ocp-dev.int.ally.com:443 -u=$(<.username.txt) -p=$(<.password.txt)
+          oc login https://master.ocp-dev(domain).com:443 -u=$(<.username.txt) -p=$(<.password.txt)
 
  
 
@@ -108,7 +108,7 @@ if [ $modOrProd = "Mod" ] || [ $modOrProd = "mod" ] || [ $modOrProd = "m" ]
 
           env="qa"
 
-          oc login https://master.ocp-qa.int.ally.com:443 -u=$(<.username.txt) -p=$(<.password.txt)
+          oc login https://master.ocp-qa.(domain).com:443 -u=$(<.username.txt) -p=$(<.password.txt)
 
  
 
@@ -118,7 +118,7 @@ if [ $modOrProd = "Mod" ] || [ $modOrProd = "mod" ] || [ $modOrProd = "m" ]
 
           env="cap"
 
-          oc login https://master.ocp-cap.int.ally.com:443 -u=$(<.username.txt) -p=$(<.password.txt)
+          oc login https://master.ocp-cap(domain).com:443 -u=$(<.username.txt) -p=$(<.password.txt)
 
         fi
 
@@ -218,7 +218,7 @@ elif [ $modOrProd = "Prod1" ] || [ $modOrProd = "prod1" ] || [ $modOrProd = "Pro
 
           modOrProd="prod1"
 
-          oc login https://master.ocp-$modOrProd.int.ally.com:443 -u=$(<.username.txt) -p=$(<.password.txt)
+          oc login https://master.ocp-$modOrProd.(domain).com:443 -u=$(<.username.txt) -p=$(<.password.txt)
 
  
 
@@ -228,7 +228,7 @@ elif [ $modOrProd = "Prod1" ] || [ $modOrProd = "prod1" ] || [ $modOrProd = "Pro
 
           modOrProd="prod2"
 
-          oc login https://master.ocp-$modOrProd.int.ally.com:443 -u=$(<.username.txt) -p=$(<.password.txt)
+          oc login https://master.ocp-$modOrProd.(domain).com:443 -u=$(<.username.txt) -p=$(<.password.txt)
 
         fi
 
