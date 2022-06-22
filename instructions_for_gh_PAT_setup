@@ -1,0 +1,16 @@
+To add gh to authenticate to github automatically 
+
+start - https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git
+next - https://cli.github.com/manual/gh_auth_login
+last - https://cli.github.com/manual/gh_auth_setup-git
+
+Run:
+brew install git (add brew to path via instructions on terminal window)
+brew install gh
+
+-gh auth login 
+-select https
+-select Y
+-enter scope[PAT/token] e.g 'repo'$GH_token
+ -follow prompts
+  -run 'gh setup-git' to make github use gh as a creds manager.
