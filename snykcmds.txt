@@ -1,8 +1,11 @@
 test container:
-snyk container test [image name:tag] <-d (debug)>
+snyk container test [image name:tag] <-d (debug)> --json > CScan.json
 
-test src:
-snyk test fm-node-api-router/ --json >output.json(puts in a file)
+test src (SCA):
+snyk test fm-node-api-router/ --json > SCAScan.json(puts in a file)
+
+test src (SAST):
+snyk code test [directory] --json SastScan.json
 
 prereqs for container scan: (assuming already authenticated to snyk.io and no image present)
 RUN "bash" cmd to switch shells
