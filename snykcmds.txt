@@ -1,0 +1,18 @@
+test container:
+snyk container test [image name:tag] <-d (debug)> --json > CScan.json
+
+test src (SCA):
+snyk test fm-node-api-router/ --json > SCAScan.json(puts in a file)
+
+test src (SAST):
+snyk code test [directory] --json > SastScan.json
+
+prereqs for container scan: (assuming already authenticated to snyk.io and no image present)
+RUN "bash" cmd to switch shells
+RUN "source .bash_profile" or add proxy settings to env if not set up
+RUN "systemclt status docker" to check docker daemon status
+ 	if running continue to next
+		else: enter "systemctl enable docker" then "systemctl start docker"
+RUN "docker info" to make sure no docker server errors
+RUN "docker build . -t <image name>" in directory where dockerfile sits
+RUN container test command above
